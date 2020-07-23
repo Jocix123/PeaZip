@@ -381,7 +381,8 @@ FreeArc's
 arc/wrc,
 sfx (7z and arc), Brotli <span style="font-weight: bold;">br</span>,
 bz2, gz, paq/lpaq/zpaq, pea,
-quad/balz/bcm, split, <span style="font-weight: bold;">tar</span>,
+quad/balz/bcm, rar (if Rar.exe is available on the system), split, <span
+ style="font-weight: bold;">tar</span>,
 upx, wim, <span style="font-weight: bold;">zip</span>, Zstandard <span
  style="font-weight: bold;">zst<br>
                         </span></td>
@@ -404,6 +405,8 @@ encryption standards</span></h3>
 ZIP: WinZip AES256 AE, and ZipCrypto for legacy
 compatibility; can decrypt PKZip's
 AES encryption<br>
+                        <br>
+RAR, if Rar.exe is available in the system<br>
                         <br>
                         <h4>ARC: FreeARC AES256, Blowfish,
 Twofish256 and
@@ -473,7 +476,9 @@ cbt (and more...)</td>
  style="vertical-align: top; background-color: rgb(250, 250, 250);"> <span
  style="font-weight: bold;">Repair</span><br>
                         <br>
-FreeArc's arc/wrc</td>
+FreeArc's arc/wrc<br>
+RAR, if Rar.exe is available in the system<br>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -484,6 +489,23 @@ FreeArc's arc/wrc</td>
             <span style="font-weight: bold;"></span><span
  style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
             <span style="font-weight: bold;"></span></div>
+            <br>
+PeaZip can also be used to try to open any arbitrary file extension
+with <span style="font-weight: bold;">"Open as archive"</span> menu
+entry, as many file formats are simply variants of archive formats
+(especially of zip standard).<br>
+Even more file structures (forensic file types, WavPack compressed
+files, etc) can be parsed extending PeaZip capabilities via <span
+ style="font-weight: bold;">standard 7-Zip
+Codecs</span>, copying extra codecs to PeaZip's folder in res\7z\Codecs
+path.<br>
+In example a large family of codecs (compatible with PeaZip and 7-Zip)
+is available <a href="https://www.tc4shell.com/en/7zip/">here<img
+ title="7-Zip codecs" alt="7Z codecs" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> -
+please note TC4Shell codecs are free but closed source, so they can be
+freely downloaded and installed by end users but they cannot be
+distributed within PeaZip packages.<br>
             <br>
 PeaZip is localized over than 30 languages and is capable of handling
 all most popular archive
@@ -1064,10 +1086,10 @@ Pavlov, LGPL) and <a target="_blank"
 (Myspace,
 LGPL, the POSIX port of 7z for Unix systems), supporting most of the
 mainstream archiving and compression formats; McMilk <a
- href="https://github.com/mcmilk/7-Zip-zstd">codecs</a> adding support
-to Brotli, FastLZMA, Lizard, LZ4, LZ5, and Zstd through 7z binary.<span
- style="text-decoration: underline;"></span><a
- href="https://github.com/mcmilk/7-Zip-zstd"></a> </li>
+ style="font-weight: bold;" href="https://github.com/mcmilk/7-Zip-zstd">codecs</a>
+adding support
+to Brotli, FastLZMA, Lizard, LZ4, LZ5, and Zstd through 7z binary (Tino
+Reichardt, LGPL).<span style="text-decoration: underline;"></span> </li>
               <li><a target="_blank"
  href="http://freearc.sourceforge.net/"><span style="font-weight: bold;">ARC</span><span
  style="font-weight: bold;"></span></a>
@@ -1567,6 +1589,7 @@ Privacy</a></small><br>
               <tbody>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank"
  href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
 Feed</a></small></td>
                   <td
@@ -1577,7 +1600,8 @@ Feed</a></small></td>
                 </tr>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
- href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip Wiki</a></small></td>
+ target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+Wiki</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
  title="PeaZip Wiki online" alt="freearc gui frontend"
